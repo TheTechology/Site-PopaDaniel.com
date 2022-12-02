@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    color: white;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style-type: none;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.navbar-title{
+    font-size: 1.5rem;
+    margin: .3rem;
+    padding-left: 5px;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li a{
+    color: white;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+}
+.navbar-links li:hover{
+    background-color: #555;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+#Home{
+    display: block;
+    padding-left: 50px;
+    width: 100%;
+    height: auto;
+    background-image: url("./photos/1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#Home .welcome, h1.name{
+    font-size: 350%;
+    font-weight: 700;
+}
+.name1{
+    color: #f4bb40;
+}
+#Home .description1{
+    font-size: 130%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #f4bb40;
+    color: black;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.contact-button:hover{
+    background-color: #efa300;
+}
+.contact-button:active{
+    opacity: 0.7;
+}
+#About{
+    width: 100%;
+    height: auto;
+}
+#About p{
+    font-size: 20px;
+}
+.myPhoto{
+    position: static;
+    padding-left: 80px;
+    max-width: 50vw;
+    height: auto;
+    float: left;
+    display: block;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+#Skills{
+    clear: both;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+}
+.progress-bar-container:not(:last-child) {
+            margin-bottom: 50px;
+        }
+ 
+       
+.progress-bar-container h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #eee;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+ 
+.progress-bar {
+            width: 75vw;
+            height: 10px;
+            margin-top: 10px;
+            border: 1px solid #565656;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(245, 159, 0);
+        }
+ 
+.percentage {
+            display: block;
+            height: 100%;
+            background-color: orange;
+            border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
+ 
+.SCSS {
+    width: 40%;
+    }
+ 
+.u {
+    width: 80%;
+    }
+ 
+.python {
+    width: 50%;
+    }
+ 
+.html {
+    width: 94%;
+    }
+ 
+.css {
+    width: 85%;
+    }
+ 
+.javascript {
+    width: 65%;
+    }
+      
+@keyframes progress {
+        from {
+            width: 0;
+        }
+    }
+#Projects{
+    background-color: #efa300;
+}
+.title-black{
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+}
+.cards{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+    max-width: 100%;
+    padding-top: 30px;
+}
+.card1{
+    flex: 25%;
+    padding: 5px 5px;
+    margin: 10px 5px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.card2{
+    flex: 25%;
+    padding: 5px 5px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.card3{
+    flex: 25%;
+    padding: 5px 5px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.second-title{
+    color: #000;
+    text-align: center;
+    font-size: 3vw;
+}
+.game-link{
+    position: relative;
+    color: #fff;
+    background-color: black;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.game-link:hover{
+    opacity: 0.8;
+    color: #efa300;
+}
+.game-link:active{
+    background-color: #555;
+    border: 3px solid #555;
+}
+.game-description{
+    color: #000;
+    font-size: 1.5vw;
+    padding-bottom: 30px;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    display: grid; 
+    text-align: center; 
+}
+.more-button{
+    margin: auto;  
+    color: #fff;
+    background-color: black;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 25px; 
+    cursor: pointer;
+}
+.more-button:hover{
+    opacity: 0.8;
+    color: #efa300;
+}
+.more-button:active{
+    background-color: #555;
+    border: 3px solid #555;
+}
+footer{
+    clear: both;
+    padding: 40px 0;
+    background-color: #222;
+}
+footer .social {
+    text-align: center;
+    padding: 30px;
+    padding-right: 10px;
+    color: white;
+}
+footer .social a {
+    font-size: 40px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+footer .social a:hover {
+    opacity: 0.8;
+}
+footer .social a:active {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #D3D3D3;
+}
+footer ul li a{
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+}
+footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #aaa;
+}
+@media (max-width: 934px){
+    .game-description{
+    color: #000;
+    font-size: 2vw;
+    padding-bottom: 30px;
+}
+}
+@media (max-width: 784px){
+    .myPhoto{
+        max-width: 100vw;
+        height: auto;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+}
+.card1{
+    flex: 100%;
+    padding: 5px 5px;
+}
+.card2{
+    flex: 100%;
+    padding: 5px 5px;
+}
+.card3{
+    flex: 100%;
+    padding: 5px 5px;
+}
+.second-title{
+    color: #000;
+    text-align: center;
+    font-size: 5vw;
+}
+.game-link{
+    position: relative;
+    color: #fff;
+    background-color: black;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.game-description{
+    color: #000;
+    font-size: 4vw;
+    padding-bottom: 30px;
+}
+}
+@media (max-width: 455px){
+#Home{
+    padding-left: 10px;
+}
+#Home .welcome, h1.name{
+    font-size: 13vw;
+    font-weight: 700;
+}
+}
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        opacity: 0.7;
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
